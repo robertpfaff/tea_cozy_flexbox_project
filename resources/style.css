@@ -11,13 +11,12 @@
 .flex-container {
   display: flex;
   flex-flow: column wrap; /* If main axis is column cross axis runs along rows.*/
-  flex: 1 1 auto;
   text-align: center; /* Text centered horizontally */
   max-width: 100%;
   width: 1240px;
   margin: 0 auto;
-  height: 100%;
-  overflow: visible;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Header Child */
@@ -92,6 +91,11 @@ nav li a :active {
   z-index: 1;
 }
 
+.mission img {
+  aspect-ratio: 1/1;
+  flex: 1 1 auto;
+}
+
 .mission > div {
 position: absolute;
 background-color: black;
@@ -155,7 +159,6 @@ align-items: center;
 /* Tea Gallery Child */
 
 .tea-gallery:nth-child(4) {
-
   display: flex;
   flex-flow: row wrap;
   position: relative;
@@ -163,13 +166,19 @@ align-items: center;
   top: 120px;
   max-width: 1000px;
   max-height: 700px;
-  overflow: visible;
+  overflow: auto;
   z-index:50;
 }
 
 figure {
   margin-right: 1.55%;
   margin-left: 1.55%;
+  overflow: auto;
+}
+
+.tea-gallery > figure:hover {
+  opacity: .5;
+  transition: .5s;
 }
 
 figcaption h4 {
@@ -186,7 +195,6 @@ figcaption h4 {
   margin-top: 0px;
   max-width: 1280px;
   max-height: 750px;
-  overflow: hidden;
   background-color: black;
 }
 
@@ -218,7 +226,6 @@ figcaption h4 {
   top: 0;
   background-image: "./images/img-locations-background.jpg";
   background-color: black;
-  overflow: hidden;
   background-repeat: none;
   background-position: center;
   max-height: 750px;
@@ -226,6 +233,9 @@ figcaption h4 {
   width: 100%;
   opacity: .5;
   z-index: 1;
+  aspect-ratio: 1/1;
+  flex-shrink: 1;
+  flex-grow: 1;  
 }
 
 .three-locations-wrapper {
