@@ -233,7 +233,7 @@ figcaption h4 {
   position: absolute;
   flex-flow: column wrap;
   place-content: center;
-  top: 215px;
+  top: 170px;
   width: 1200px;
   max-height: 300px;
   background-color: transparent;
@@ -252,7 +252,6 @@ figcaption h4 {
 
 .loc-items > h3 {
   font-weight: 700;
-
   z-index: 99;
 }
 
@@ -262,13 +261,14 @@ figcaption h4 {
   z-index: 99;
 }
 
+/* Contacts Child */
 
 .contact:nth-child(6) {
-  display: flex;
+  display: inline-flex;
+  position: relative;
+  top: 50;
   flex-flow: column wrap;
   text-align: center;
-  top: 50;
-  position: relative;
   color: #b3b9c4;
   width: 1200px;
   max-height: 300px;
@@ -276,10 +276,17 @@ figcaption h4 {
   z-index: 99;
 }
 
+#email {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  top: 20px;
+}
+
 .copyright:nth-child(7) {
   display: flex;
   position: relative;
-  top: 100px;
+  top: -20px;
   margin-left: 0px;
   padding-left: 20px;
 }
